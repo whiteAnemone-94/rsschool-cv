@@ -29,3 +29,19 @@ I used to have a portfolio with projects, but then I realized that many of them 
 ## Education and courses
 * ***University***: International Academy of Business and New Technologies (MUBiNT), Bachelor's degree, Faculty of Linguistics and Translation, 2016-2021
 * ***University:*** Tomsk State University of Control Systems and Radioelectronics, Informatics and Computer Engineering, since 2022
+
+## Code example:
+*Code example from Codewars: [Handshake problem](https://www.codewars.com/kata/5574835e3e404a0bed00001b)*
+```
+function getParticipants(handshakes) {
+    for (let i = 0; i <= 1000; i++) {
+        if ((i**2 - i)/2 == handshakes) {
+            console.log(i)
+            return i;
+        } else if ((((i-1)**2 - (i-1))/2 < handshakes) && ((i**2 - i)/2 > handshakes)) {
+            console.log(i)
+            return i
+        }
+    }
+}
+```
